@@ -1,7 +1,4 @@
-# Elementary CA includes the CA that exclude computation from one or more of the cells.
-# this is a short program to find the 3 sets that do this for left central and right nodes.
-# this reduces the ECA to even smaller computational universes
-
+# Small project to calculate the minimum equivalent rules for HHRBN and/or RBN
 import numpy as np
 import helpers.helper as helper
 import math as math
@@ -9,7 +6,9 @@ import itertools
 import random
 import time
 
+# Numb of neighbours
 n = 3
+# Whether to include complement transformation or not.
 complement = False
 
 ttl = int(math.pow(2, n))
